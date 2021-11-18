@@ -4,7 +4,8 @@ function About(){
 
     return(
         <div>
-            <h1> About FAST </h1>
+            
+
         </div>
     )
 }

@@ -3,8 +3,8 @@ import React from 'react'
 function Home(){
 
     return(
-        <div>
-            <h1> FAST </h1>
+        <div >
+           Welcome to Fast
         </div>
     )
 }
