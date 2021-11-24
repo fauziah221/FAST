@@ -6,8 +6,8 @@ import About from '../Pages/About'
 import Connect from '../Pages/Connect'
 import Challanges from '../Pages/Challanges'
 import Home from '../Pages/Home'
-import Login from '../Pages/Login'
 import Signup from '../Pages/Signup'
+import Login from '../Pages/Login'
 
 //<img className="photo" src={FASTLOGO}></img>
 function  navbar() {
@@ -36,8 +36,8 @@ function  navbar() {
                 <Route exact path="/Connect"><Connect/></Route>
                 <Route exact path="/Challanges"> <Challanges/></Route>
                 <Route exact path="/About"><About/></Route>
-                <Route exact path="/Login"><Login/></Route>
                 <Route exact path="/Signup"><Signup/></Route>
+                <Route exact path="/Login"><Login/></Route>
             </Switch>
             </div>
         </Router>
