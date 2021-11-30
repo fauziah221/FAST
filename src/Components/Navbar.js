@@ -7,7 +7,6 @@ import Connect from '../Pages/Connect'
 import Challanges from '../Pages/Challanges'
 import Home from '../Pages/Home'
 import Signup from '../Pages/Signup'
-import Login from '../Pages/Login'
 
 //<img className="photo" src={FASTLOGO}></img>
 function  navbar() {
@@ -24,7 +23,6 @@ function  navbar() {
                         <Nav.Link as={Link} to="/Connect">Connect</Nav.Link>
                         <Nav.Link as={Link} to="/Challanges">Challanges</Nav.Link>
                         <Nav.Link as={Link} to="/About">About</Nav.Link>
-                        <Nav.Link as={Link} to="/Login">login</Nav.Link>
                         <Nav.Link as={Link} to="/Signup">Signup</Nav.Link>
                     </Nav>
 
@@ -37,7 +35,6 @@ function  navbar() {
                 <Route exact path="/Challanges"> <Challanges/></Route>
                 <Route exact path="/About"><About/></Route>
                 <Route exact path="/Signup"><Signup/></Route>
-                <Route exact path="/Login"><Login/></Route>
             </Switch>
             </div>
         </Router>

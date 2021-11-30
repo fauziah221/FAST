@@ -3,11 +3,12 @@ import React from 'react'
 import useForm from './UseForm'
 import validate from './validateinfo';
 import './Form.css'
+import running from '../../images/running.jpg';
 
 const SignupForm = (submitForm) => {
     const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
     return (
-        <div className="formContent">
+        <div className="formContent" className="formContent" style={{ backgroundImage: `url(${running})`}}>
             <form className="form" onSubmit={handleSubmit}>
                 <h1>
                     Hmmmm... seems you aren't logged in to view your profile. oh man, 
