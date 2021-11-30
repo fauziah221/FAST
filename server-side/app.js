@@ -1,26 +1,16 @@
-const express = require('express')
-const app = express();
-const mongoose = require('mongoose')
-require('dotenv/config');
-const bodyParser = require('body-parser');
+let express = require('express');
+let app = express();
+app.set('view engine', 'ejs');
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
-app.use(bodyParser.json())
+let port = 3000;
 
 
-const postsRoute = require('./posts');
-
-app.use('/posts', postsRoute)
-
-app.get('/', (req, res) =>{
-    res.send('We are on home');
+app.get("/", function(req, res) {
+    res.render("index");
 });
 
-
-//DB connection 
-mongoose.connect(
-    process.env.DB_Connection,
-{useNewUrlParser: true}, () => console.log('connected to mongodb'))
-
-app.listen(3000);
-
-
+app.listen(port, function() {
+    console.log("Server running on localhost:3000");
+});

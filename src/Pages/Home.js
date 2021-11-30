@@ -5,6 +5,8 @@ function Home(){
     return(
         <div >
            Welcome to Fast
+
+         
         </div>
     )
 }
