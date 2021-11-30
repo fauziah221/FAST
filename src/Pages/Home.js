@@ -1,10 +1,14 @@
 import React from 'react'
+import LoginForm from '../Components/Login/LoginForm'
+import Homepage from '../Components/homepage/homepage';
 
 function Home(){
 
     return(
         <div >
-           Welcome to Fast
+           <Homepage/>
+
+           <LoginForm/>
 
          
         </div>

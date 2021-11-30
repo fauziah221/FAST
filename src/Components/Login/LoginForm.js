@@ -2,11 +2,12 @@ import React from 'react'
 import useForm from './UseForm'
 import validate from './validateinfo';
 import './Form.css'
+import running from '../../images/running.jpg';
 
 const LoginForm = () => {
     const { handleChange, values, handleSubmit, errors } = useForm(validate);
     return (
-        <div className="formContent">
+        <div className="formContent" style={{ backgroundImage: `url(${running})`}}>
             <form className="form" onSubmit={handleSubmit}>
                 <h1>
                     Welcome Back!! omg we missed you
@@ -15,7 +16,7 @@ const LoginForm = () => {
                     <label htmlFor="username" className="formLabel">UserName</label>
                         <input 
                             type="text" 
-                            name="username" 
+                            name="username: " 
                             className="form-input" 
                             placeholder="Enter Username"
                             value={values.username}

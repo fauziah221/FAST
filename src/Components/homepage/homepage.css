@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    size: cover;
+    -webkit-background-size: cover;
+    
+}
+
+h2{
+    color: #b19cd9;
+}
+
+p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p span{
+    background-color: blanchedalmond;
+    
+}
