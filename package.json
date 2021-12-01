@@ -10,12 +10,9 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-<<<<<<< HEAD
     "bootstrap": "^4.4.1",
-=======
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
->>>>>>> 4ac2cbf6ba05ed280a1bcc38ad73259379284266
     "framer-motion": "^4.1.17",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
